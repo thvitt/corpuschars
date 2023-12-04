@@ -1,0 +1,47 @@
+Schriftenhancement
+1. curl für win64 heruntergeladen und nicht installiert, weil angeblich schon in Windows enthalten.
+
+Aufruf curl in powershell hat funktioniert aber der Parameter -sSL wurd nicht gefunden:
+curl -sSL https://pdm-project.org/install-pdm.py | python3 -
+
+pipx via pip install installiert:
+	- colorama, click, userpath, packaging, argcomplete und pipx wurden dabei installiert
+	
+Dann :
+pipx install pdm
+C:\Users\gerde\AppData\Roaming\Python\Python311\Scripts in den path (system) gelegt
+dann 
+pipx ensurepath
+
+konnte nicht überprüfen, ob der Pfad bei user und/oder system ergäzt wurde:
+Was muss dort stehen
+
+Auf dem Laptop:
+ py -3 -m pipx ensurepath
+Success! Added C:\Users\gerde\.local\bin to the PATH environment variable.
+C:\Users\gerde\AppData\Roaming\Python\Python311\Scripts has been been added to PATH, but you need to open a new
+    terminal or re-login for this PATH change to take effect.
+
+Consider adding shell completions for pipx. Run 'pipx completions' for instructions.
+
+You will need to open a new terminal or re-login for the PATH changes to take effect.
+
+Otherwise pipx is ready to go!
+
+
+
+completion??
+in powershell :
+pdm completion powershell
+- har das script angezeigt, aber auch ausgeführt? 
+- wie hesst das und wo steht es?
+
+pip
+
+
+weiter mit pdm init im verzeichnis documents/s_e
+Interview als Projekt durchgeführt;
+dann: git init
+Fragen: 
+Wie kriege ich dieses Repo nach github?
+Wie koordiniere ich das mit den anderen im Projekt?

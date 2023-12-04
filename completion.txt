@@ -1,0 +1,13 @@
+# Create a directory to store completion scripts
+mkdir $PROFILE\..\Completions
+echo @'
+Get-ChildItem "$PROFILE\..\Completions\" | ForEach-Object {
+    . $_.FullName
+}
+'@ | Out-File -Append -Encoding utf8 $PROFILE
+# Generate script
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+pdm completion powershell | Out-File -Encoding utf8 $PROFILE\..\Completions\pdm_completion.ps1
+
+
+mit pdm init und interview erste Umgebung erzeugt im Verzeichnis schrift_enhancement

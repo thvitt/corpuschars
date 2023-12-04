@@ -1,0 +1,17 @@
+[project]
+name = "s_e"
+version = "0.1.0"
+description = "Schriftzeichen erkennen, finden oder neu definieren"
+authors = [
+    {name = "Gerd Eickelpasch", email = "gerd.eickelpasch@gmail.com"},
+]
+dependencies = [
+    "nltk>=3.8.1",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
