@@ -1,0 +1,122 @@
+Metauser: ;-)
+Ich möchte die in den userrstories unten noch vorhanden Abhängigkeiten auflösen
+
+
+user 1
+Zur Reduktion der Komplexität möchte ich alle Fonts westlicher Sprachen
+zu Verfügung haben, um in ihnen die übereinstimmenden Zeichen, 
+die in allen Fonts verfügbar sind zu ermitteln, damit ich sie aus meinem 
+Korpus entfernen kann. 
+Akkzeptanz 1: 
+Wenn sichergestellt, dass
+1. alle Fonts gefunden wurden
+2. alle Fonts durchsucht wurden
+3. Eine Matrix in Dateiform existiert mit der Form 
+utf-code (Zeile)  font (Spalte) (oder transformiert) und den 
+Einträgen ja/neien
+4. Eine Datei existiert, die eine Liste der überall vorhandenen repräsentiert.
+
+usr 1b  
+Ich möchte ein Ranking der Fonts haben in der Form 
+Fontname - vorhandene Zeichen besser noch
+Fontname - Liste der Zeichen, die in anderen Fonts vorkommen aber hier nicht
+
+Akzeptanz 1b-c
+Verfügbarkeit der Dateien
+
+
+
+user2
+Ich möchte sicherstellen, dass ich das Korpus vollständig im Pythonprogramm 
+verfügbar habe und nur die Dateien, die zum Korpus gehören.
+
+Akzeptanz 2:
+Verfügbarkeit eines bereinigten Korpusverzeichnis
+Nachweis eines Tests aus Vollständigkeit des Einlesens
+
+user 3
+Ich möchte ein Skript haben, dass sicher alle vorgegeben Zeichen aus einer 
+Datei entfernt.
+
+Akzeptanz 3:
+Verfügbarkeit zur Datei einer zweiten Datei mit dem Namen
+"Dateiname_bereinigt" (Dabei ist "Dateiname" der Name der ursprüngliche)
+Verfügbarkeit eines immer wieder lauffähigen Tests.
+
+
+user 4
+Ich möchte eine Liste als Datei vorliegen haben, in der die übrigen Zeichen
+festgehalten werden, und zwar zusammen mit den Dateinamen, in denen sie 
+vorkommen, der Häufigkeit mit der sie in der Datei vorkommen und eine zweite 
+Liste mit der gesamten Häufigkeit.
+
+Akzeptanz 4:
+Verfügbarkeit einer Datei mit den Sätzen der Struktur
+Zeichen: [Dateiname, Anzahl des Vorkommens]
+
+Verfügbarkeit der Datei mit der Struktur:
+Zeichen: Gesamtzahl des Vorkommens
+
+user 5
+Ich möchte die Möglichkeit haben, die in "user 4" genannten Ausgaben per 
+Eingabe oder per ermitteltem Parameter auf eine geringe Anzahl einzuschränken.
+
+Akzeptanz 5:
+Verfügbarkeit eines Programms zur Ermittlung des Parameters mit Begründung
+des Algorithmus
+Vorliegen der reduzierten Dateien auf Basis von user 4.
+
+user 6
+Ich möchte ein Programm haben, das ein vorgegebenes Zeichen in allen verfügbar 
+gemachten Fonts sucht und dabei Fonts dokumentiert, in denen es verfügbar ist
+und eine Negativliste, in denen es nicht verfügbar ist.
+
+Akzeptanz 6:
+Datei mit der Matrix-Struktur:
+UTF-Code: Liste aller Fonts und true/false als Eintrag bei UTF-Code"x" und Fontname"y".
+
+
+
+
+user 7
+Ich möchte einen Algorithmus zur Ermittlung eines Ranking des bestgeeigneten
+Fonts, damit ich diesen als Ausgangsbasis für eine Darstellung in allen möglichen
+Ausgabeformaten habe.
+
+Akzeptanz 7:
+Algorithumus verfügbar
+
+user 8
+Ich möchte eventuelle Einschränkungen eines gegebenen Fonts ermitteln.
+(Skalierbarkeit, Verfügbarkeit)
+
+Akzeptanz 8
+vorliegen einer Auflistung und Beschreibung denkbarer Einschränkungen
+
+user 9
+Ich möchte Kriterien haben, die die Übereinstimmung einer Darstellung eines 
+Zeichens mit einem vorgegebenen skalierbaren Bild bewertet, und zwar in allen
+Schriftgrößen, Fettdruck ..... und eine Idee zur programatischen Nutzung
+
+Akzeptanz 9
+Vorliegen der Kriterien der Beschreibung
+Vorliegen von Ideen zu ausfühbaren Algorithmen
+
+user 10
+Ich möchte auf Basis von "user 9" die Eignung eines Zeichens in einem Font
+für die Darstellung eines vorgefundenen Zeichens bewerten.
+
+Akzeptanz 10
+Vorliegen einer Skala: vollständig geeignet - 
+geeignet bis auf z.B. html
+
+user 11
+Ich möchte eine eigene Darstellung eines Zeichens erstellen können und sie 
+in einem Font verfügbar machen (oder einen eigenen dazu entwickeln), so dass
+der neue oder erweitere Fonts für alle Benutzer verfügbar gemacht werden kann.
+
+Akzeptanz 11
+Erstelltes Zeichen unter utf-code "x" in font "name"
+duechgeführte Eignunstests.
+
+
