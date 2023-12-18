@@ -1,0 +1,3 @@
+[submodule "tests/data/faust"]
+	path = tests/data/faust
+	url = https://github.com/faustedition/faust-xml
