@@ -1,3 +1,6 @@
 [submodule "tests/data/faust"]
 	path = tests/data/faust
 	url = https://github.com/faustedition/faust-xml
+[submodule "tests/data/romane"]
+	path = tests/data/romane
+	url = https://github.com/cophi-wue/refcor
