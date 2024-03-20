@@ -1,22 +1,23 @@
 [project]
-name = "s_e"
+name = "corpuschars"
 version = "0.1.0"
-description = "Schriftzeichen erkennen, finden oder neu definieren"
+description = "Default template for PDM package"
 authors = [
     {name = "Gerd Eickelpasch", email = "gerd.eickelpasch@gmail.com"},
+    {name = "Johannes Leitgeb", email = "johannes.leitgeb@stud-mail.uni-wuerzburg.de"},
 ]
 dependencies = [
     "nltk>=3.8.1",
     "pandas>=2.1.4",
     "pytest>=7.4.4",
+    "lxml>=5.1.0",
+    "typing>=3.7.4.3",
 ]
-requires-python = ">=3.11"
+requires-python = "==3.9.*"
 readme = "README.md"
 license = {text = "MIT"}
 
-[build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
-
 [tool.pytest.ini_options]
 pythonpath = "src"
+[tool.pdm]
+distribution = false
