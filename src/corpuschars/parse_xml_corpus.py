@@ -34,10 +34,12 @@ def flatten_str_list(text_list: List[str]) -> str:
     return " ".join(text_list)
 
 
-def main():
+def main() -> List[str]:
+    """returns list of strings for use in workflow"""
     dir_path = Path(input("path to corpus files:  "))
     file_list = read_corpus(dir_path)
-    print(return_text(file_list))
+    text = return_text(file_list)
+    return text
 
 
 if __name__ == "__main__":
